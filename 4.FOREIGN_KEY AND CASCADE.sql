@@ -42,3 +42,32 @@ update subjects set dep_id = 1002 where dep_id = 102;
 -- Check result
 select * from subjects;
 select * from teachers;
+
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
+Initial commit
