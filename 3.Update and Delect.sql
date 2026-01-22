@@ -110,3 +110,6 @@ select * from student;
 
 -- deleting only one record based on order by clause
 delete from student order by rollno asc limit 1;
+
+-- removing all the data from the table but keep the structure
+truncate table student3;

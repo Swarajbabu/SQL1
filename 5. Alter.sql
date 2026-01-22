@@ -26,6 +26,9 @@ select * from StudentDetails;
 -- adding a new column
 alter table student3 add age int;
 
+-- adding a new column with not null constraint and default value
+alter table student3 add age int not null default 19;
+
 -- adding a new column with default value
 alter table student3 add Country varchar(50) default "India";
 
@@ -41,3 +44,17 @@ alter table student3 drop column age;
 -- renaming the table
 alter table student3 rename to StudentDetails;
 
+-- changing the column name along with data type
+alter table student3 change column age Student_age int;
+
+-- drop the table
+drop table student3;
+
+-- drop the database
+drop database college1;
+
+-- To view the structure of the table
+desc StudentDetails;
+
+-- To remove all the data from the table but keep the structure
+truncate table student3;

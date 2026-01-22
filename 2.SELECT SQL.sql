@@ -62,9 +62,14 @@ select distinct city from student; -- it will give only unique city names
 
 -- using logical operators
 select * from student where marks between 80 and 90; 
+select * from student where marks>=90 or city="Pune";
+select * from student where not city="Delhi";
+select * from student where marks>=85 ALL;
+select * from student where marks<=70 ANY;
 select * from student where city in ("Mumbai","Delhi");
 select * from student where city not in ("Mumbai","Pune");
 select * from student where city like "D%"; -- cities starting with D
+select * from student where city like "%i"; -- cities ending with i
 
 -- limit clause where we can limit the number of rows to be displayed
 select * from student limit 3;
