@@ -57,7 +57,7 @@ select distinct city from student; -- it will give only unique city names
 
 -- Arithmetic Operators: + (add), - (subtract), * (multiply), / (divide), % (modulus)
 -- Comparison Operators: =, !=, >, <, >=, <=
--- Logical Operators: AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY
+-- Logical Operators: AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY, <> or != (symbol in sql or not equal to)
 -- Bitwise Operators: & (AND), | (OR)
 
 -- using logical operators
@@ -70,6 +70,7 @@ select * from student where city in ("Mumbai","Delhi");
 select * from student where city not in ("Mumbai","Pune");
 select * from student where city like "D%"; -- cities starting with D
 select * from student where city like "%i"; -- cities ending with i
+select * from student where marks <> 85 or marks not null; -- marks not equal to 85 and marks not null
 
 -- limit clause where we can limit the number of rows to be displayed
 select * from student limit 3;
